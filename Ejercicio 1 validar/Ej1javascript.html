@@ -12,20 +12,22 @@
         <label for="edad"></label>
         <input id="edad" type="text" placeholder="Edad"/>
        	<label for="sexo"></label>
-       	<select name="sexo">
+       	<select oninput="mostrarocultar()" id="sexo">
        		<option id="hombre" value="1">Hombre</option>
        		<option id="mujer" value="2">Mujer</option>
        	</select>
-       	<select id="trabajohombre" style="display: none;">
-       		<option value="1">Hombre1</option>
-       		<option value="2">Mujer1</option>
+       	<select id="trabajohombre" style="display: ;">
+       		<option value="1">Empleado</option>
+       		<option value="2">Trabajo temporario</option>
+          <option value="3">Desempleado</option>
        	</select>
        	<select id="trabajomujer" style="display: none;">
-       		<option value="1">Hombre2</option>
-       		<option value="2">Mujer2</option>
+       		<option value="1">Empleada</option>
+       		<option value="2">Desempleada</option>
+          <option value="3">Ama de casa</option>
        	</select>
 
        	<button type="submit" onclick="validar()">Validar</button>
 
-    </form>
+  </form>
 </body>
