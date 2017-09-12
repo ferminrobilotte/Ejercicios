@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<script type="text/javascript" src="ValidarNombre.js"></script>
+</head>
+<body>
+	<form method="post" action="">
+        <label for="nombre"></label>
+        <input id="nombre" type="text" placeholder="Nombre"/>
+        <label for="email"></label>
+        <input id="email" type="text" placeholder="Email"/>
+        <label for="edad"></label>
+        <input id="edad" type="text" placeholder="Edad"/>
+       	<label for="sexo"></label>
+       	<select name="sexo">
+       		<option id="hombre" value="1">Hombre</option>
+       		<option id="mujer" value="2">Mujer</option>
+       	</select>
+       	<select id="trabajohombre" style="display: none;">
+       		<option value="1">Hombre1</option>
+       		<option value="2">Mujer1</option>
+       	</select>
+       	<select id="trabajomujer" style="display: none;">
+       		<option value="1">Hombre2</option>
+       		<option value="2">Mujer2</option>
+       	</select>
+
+       	<button type="submit" onclick="validar()">Validar</button>
+
+    </form>
+</body>
